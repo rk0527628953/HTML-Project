@@ -1,0 +1,468 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    font-family:Calibri;
+    text-align: center;
+}
+body{
+    margin: 0px;
+    direction: rtl;
+    height: 100%;
+    
+}
+img{
+    width: 100%;
+}
+p{
+    color: white;
+}
+.logo{
+    color:#A6665A;;
+    font-family: Edwardian Script ITC;
+    font-size: 12rem;
+    margin-top: 1.5rem;
+    margin-bottom: auto;
+}
+.bt{
+    background-color: #A6665A;
+    color: white;
+    border: none;
+    border-radius: 70px 70px 70px 70px;
+    padding: 15px 50px 15px 50px;
+    font-size: 1.5rem;
+    font-family:Calibri;
+}
+.bt:hover{
+    background-color: #92665e;
+}
+.card{
+    background-color:rgb(34, 32, 32) ;
+    transform: scale(1);
+    transition: transform 1s;
+}
+.card:hover{
+    transform: scale(1.03);
+}
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+    gap: 1rem;   
+}
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    margin: 1rem;
+    margin-bottom: 0;
+}
+.pink{
+    color: #A6665A;
+}
+.title{
+    font-size: 2.5rem;
+    border-style: solid;
+    border-color: #A6665A;
+    border-width: 0px 0px 4px 0px;
+    margin: 0;
+    display: inline;
+}
+.white{
+    height: 10vh;
+}
+.our_stor .image{
+    height: 45vh;
+}
+.our_stor .bt{
+    padding: 8px 60px 8px 60px; 
+    margin: 10px;
+}
+.our_stor .card p{
+    font-size: 1.5rem;
+}
+/* header */
+header{
+    background-color:#A6665A;
+    height: 8vh;
+    padding-top: 0px;
+    position: relative;
+}
+header nav{   
+    margin: 0 0 0 4rem;
+    position: absolute;
+    left: 1rem;
+    top:1.5rem;
+}
+header nav a{
+    color:#caa29b ;
+    padding: 1rem;
+    text-decoration: none;  
+}
+header .stor{
+  display: inline-block;
+}
+header .stor2{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #A6665A21;
+}
+header .stor2 a{
+    display: block;
+    width: 8rem;
+}
+header .stor:hover .stor2{
+    display: block;
+}
+header .stor2 a:hover{
+    color: black;
+    background-color: #ba6f6221;
+}
+header nav a:hover{
+    color: white;
+}
+header button{
+    display: none;
+}
+header .res1{
+    display: none;
+}
+/* main */
+main{
+    border-style: solid;
+    border-width: 0px 30px 0px 30px;
+    border-color: #A6665A;
+}
+/* footer */
+footer{
+    background-color:rgb(34, 32, 32);
+    opacity: 0.95;
+    border-style: solid;
+    border-width: 0px 30px 0px 30px;
+    border-color: #A6665A;
+}
+footer .flex{
+  flex-direction: column;
+}
+
+footer .flex1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer form{  
+    gap: 1rem;
+    margin: 2rem;   
+}
+footer .footer_black form input,textarea{
+  padding: 12px 20px;
+  background-color: rgb(66, 61, 61);
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+footer .footer_black textarea{
+    background-color: rgb(66, 61, 61);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+footer form textarea{
+    height: 10rem;
+}
+footer form .bt{
+    border-radius: 0 0 0 0;
+    padding: 5px 50px 5px 50px;  
+}
+footer .footer_pink{
+    height: 4rem;
+    background-color: #A6665A;
+}
+footer h3{
+    color: white;
+    font-size: 1.5rem;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+}
+footer .footer_white{
+    background-color: white;
+    border-style: solid;
+    border-color: #A6665A;
+    border-width: 2px 0px 0px 0px;   
+}
+.footer_white .bt{
+    margin: 1.5rem;
+}
+.footer_white h2{
+    font-size: 2rem;   
+}
+footer img{   
+    height: 6rem;
+    width: 6rem;
+    z-index: 1;
+    bottom: 30px;
+    left: 60px;
+    position: fixed;
+}
+/* homepage */
+#homepage .con{
+    background-size: 80vw 100vh;
+    background-image: url(images/homepage/img_8520_optimized1.jpg);
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+#homepage .ab{
+    position: absolute;
+    background-color:rgb(34, 32, 32);
+    right: 6rem;
+    height: 90vh;
+    width: 40vw;
+    opacity: 0.95;
+}
+#homepage .ab h2{
+    font-size: 3.5rem;
+}
+#homepage .ab p{
+    font-size: 1.5rem;   
+}
+#homepage .grid{  
+    grid-template-columns: repeat(3,1fr); 
+    margin: 7rem 1rem 0 1rem;
+}
+#homepage button{
+    margin: 2rem;
+    margin-top: 0;
+}
+#homepage .card p{
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+#homepage .logos img{
+    width: 10vw;
+    height: 10vh;
+}
+#homepage div .flex{
+    justify-content: space-around;
+}
+#homepage .aside{
+    font-size: 2.5rem;
+    margin: 5rem;
+    padding: 1.5rem;
+    background-color:#A6665A21 ;
+}
+/* about */
+#about .grid{   
+    grid-template-columns: repeat(2,1fr);
+}
+#about .img{
+    height: 100vh;
+    width: 37vw;
+    margin: 1rem 0rem 1rem 1rem;
+}
+#about .about{
+    background-color:rgb(34, 32, 32);
+    opacity: 0.95;
+    margin: 1rem 1rem 1rem 0; 
+    width: 55vw;
+    text-align: right;
+    margin-bottom: 6rem;
+}
+#about .about .about1{
+    margin-right: 2rem;
+}
+#about .about h2{
+    font-size: 2rem;   
+}
+#about .about ul{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+#about .about p{   
+    font-size: 1.5rem;
+}
+#about .about2 .logo{
+    font-size: 6rem;
+}
+#about .about2 p{
+    font-size: 2.5rem;
+    line-height: 1em;
+    font-weight: bold;
+}
+#about .about2 p:nth-child(2){
+    font-size: 2.3rem;
+}
+/* kesher */
+#k .flex1{
+ display: flex;
+ justify-content: space-around;
+}
+#k img{
+  height: 3rem;  
+  width: 4rem;
+}
+#k p{
+    color: black;
+    font-size: 1.5rem;
+}
+#k form{
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    
+}
+#k form input,textarea{
+  width: 32rem;
+  height: 3rem;
+  padding: 12px 20px;
+  background-color: #A6665A21;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+#k form textarea{
+    height: 10rem;
+}
+#k form .bt{
+    border-radius: 0 0 0 0;
+    padding: 5px 50px 5px 50px;
+    margin-bottom : 1rem;
+}
+
+
+
+@media screen and (max-width: 1200px){
+    header nav{
+        top: 0.5rem;
+    }
+    #homepage .ab p{
+        display: none;
+    }
+    #homepage .ab h2{
+      margin: auto;
+    }
+    .grid2{
+        grid-template-columns: repeat(3,1fr);
+    }
+    #about .img{
+        height: 115vh;
+        width: 34vw;
+    }
+    #k p{
+        font-size: 1rem;
+    }
+    #k form input,textarea{
+        width: 25rem;
+        height: 2rem;
+        padding: 12px 20px;
+    }
+    #k form textarea{
+        height: 5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 600px){
+    .bt{
+        padding: 10px 25px 10px 25px;
+        font-size: 1rem;
+        font-family:Calibri;
+    }
+    /* header */
+    header button{
+        display: block;
+        position: absolute;
+        left: 4rem;
+        top: 0.4rem;
+        background-image:url(images/תפריט.PNG);
+        padding: 0.9rem 1.4rem 0.9rem 1.4rem;
+        border-radius: 10px 10px 10px 10px;
+        border: none;
+    }
+    header .res1{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background-color: #A6665A21;
+    }
+    header .res1 a{
+        display: block;
+        width: 8rem;
+        height: 2rem;
+        color: white;
+        text-decoration: none;
+    }
+    header .res:hover .res1{
+        display: block;
+        left: 4rem;
+        top: 1rem;
+    }
+    header .res1 a:hover{
+        background-color: #ba6f6221;
+    }
+    header nav a{
+        display: none;
+    }
+    /* homepage */
+    #homepage .logo{
+        font-size: 7rem;
+    }
+    #homepage .ab h2{
+        font-size: 3rem;
+    }
+    #homepage .ab .bt{
+        margin-top: 2.5rem;
+    }
+    #homepage .grid{  
+        grid-template-columns: repeat(1,1fr); 
+        margin: 7rem 1rem 0 1rem;
+    }
+    /* about */
+    #about img{
+        display: none;
+    }
+    #about .about2{
+        display: none;
+    }
+    #about .about{
+        width: 100%;
+        text-align: right;
+    }
+    .grid2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #k .flex1{
+        display: flex;
+        flex-direction: column;
+    }
+    #k form{
+        display: none;
+    }
+    #k .title{
+        font-size: 2rem;
+    }
+    /* footer */
+    footer .footer1{
+       display: none;
+    }
+    footer .footer2{
+        display: none;
+    }
+}
+
+
+.row{
+    font-size: 20px;
+}
+.total{
+    font-size: 30px;
+ 
+}
+
